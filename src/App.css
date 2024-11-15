@@ -1,38 +1,77 @@
-.App {
+/* General App Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+}
+
+/* App Container */
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #0288d1;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 7px;
+}
+
+/* Main Content */
+.email-input {
+  width: 90%;
+  height: 200px;
+  padding: 10px;
+  margin: 20px 0;
+  border: 2px solid #0288d1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.fetch-button {
+  display: block;
+  margin: 20px auto; /* Top and bottom margins with auto for left and right */
+  width: 200px; /* Adjust width as needed */
+  background-color: #0288d1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fetch-button:hover {
+  background-color: #0277bd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* API Response */
+.api-response {
+  margin-top: 20px;
+  text-align: left;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #0288d1;
+  border-radius: 8px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
